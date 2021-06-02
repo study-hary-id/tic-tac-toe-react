@@ -5,10 +5,10 @@ class Board extends React.Component {
   renderSquare(i) {
     return <Square value={i} />;
   }
-  
+
   render() {
     const status = 'Next player : X';
-    
+
     return (
       <>
         <div className="status">{status}</div>
