@@ -1,6 +1,6 @@
 import React from 'react';
 import Board from './Board';
-import calculateWinner from '../utils/calculateWinner';
+import calculateWinner from './utils/calculateWinner';
 
 class Game extends React.Component {
   constructor(props) {
@@ -50,15 +50,17 @@ class Game extends React.Component {
     }
 
     return (
-      <div className="game">
+      <>
         <div className="status">{status}</div>
-        <div className="game-board">
-          <Board
-            squares={current.squares}
-            onClick={(i) => this.handleClick(i)}
-          />
+        <div className="game">
+          <div className="game-board">
+            <Board
+              squares={current.squares}
+              onClick={(i) => this.handleClick(i)}
+            />
+          </div>
         </div>
-      </div>
+      </>
     );
   }
 }
