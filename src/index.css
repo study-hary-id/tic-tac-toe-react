@@ -12,21 +12,21 @@ code {
     monospace;
 }
 
-ol,
-ul {
-  padding-left: 30px;
-}
-
-.board-row:after {
-  clear: both;
-  content: '';
-  display: table;
+.game {
+  display: flex;
+  flex-direction: column;
 }
 
 .status {
   font-size: 25px;
   letter-spacing: 5px;
   margin-bottom: 50px;
+}
+
+.board-row:after {
+  clear: both;
+  content: '';
+  display: table;
 }
 
 .square {
@@ -49,13 +49,4 @@ ul {
 
 .kbd-navigation .square:focus {
   background: #ddd;
-}
-
-.game {
-  display: flex;
-  flex-direction: row;
-}
-
-.game-info {
-  margin-left: 20px;
 }
