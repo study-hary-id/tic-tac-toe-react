@@ -32,7 +32,22 @@ code {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  margin-bottom: 1rem;
+  margin: 0 1rem 1rem 1rem;
+}
+
+.game-info {
+  height: 330px;
+  width: 330px;
+}
+
+ol {
+  height: 320px;
+  margin: 5px;
+  overflow-y: auto;
+}
+
+.button-info {
+  font-size: calc(10px + 2vmin);
 }
 
 .board-row:after {
