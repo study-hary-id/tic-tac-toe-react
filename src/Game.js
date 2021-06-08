@@ -1,5 +1,6 @@
 import React from 'react';
 import Board from './Board';
+import History from './History';
 import calculateWinner from './utils/calculateWinner';
 
 class Game extends React.Component {
@@ -58,6 +59,9 @@ class Game extends React.Component {
               squares={current.squares}
               onClick={(i) => this.handleClick(i)}
             />
+          </div>
+          <div className="game-info">
+            <History history={history} />
           </div>
         </div>
       </>
