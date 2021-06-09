@@ -7,7 +7,12 @@ class History extends React.Component {
       const text = move ? 'Go to move #' + move : 'Go to game start';
       return (
         <li key={move}>
-          <button className="button-info">{text}</button>
+          <button
+            className="button-info"
+            onClick={() => this.props.onClick(move)}
+          >
+            {text}
+          </button>
         </li>
       );
     });
